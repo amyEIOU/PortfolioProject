@@ -14,7 +14,6 @@
       rel="stylesheet"
     />
     <title>Portfolio Project</title>
-    <script src="./Resources/javascript/javascript.js"></script>
   </head>
   <body>
     <main>
@@ -35,11 +34,183 @@
       </header>
       <nav>
         <ul>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Contact Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#Skill-Sections">Skills</a></li>
+          <li><a href="#About-Me">About Me</a></li>
+          <li><a href="#Contact">Contact Me</a></li>
         </ul>
       </nav>
     </main>
+    <button class="back-to-top hidden">⬆</button>
+    <section id="projects">
+      <h4>Projects</h4>
+      <div class="project-container">
+        <div class="project-image-container" id="project-one">
+          <h5>Project One</h5>
+          <img
+            class="under-construction"
+            src="./Resources/images/constcone.img"
+            alt="Contruction Cone"
+          />
+        </div>
+
+        <div class="project-image-container" id="project-two">
+          <h5>Project Two</h5>
+          <img
+            class="under-construction"
+            src="./Resources/images/UnderConst.img"
+            alt="Figure working on computer"
+          />
+        </div>
+
+        <div class="project-image-container" id="project-three">
+          <h5>Project Three</h5>
+          <img
+            class="under-construction"
+            src="./Resources/images/signj.img"
+            alt="Signage"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="Skill-Sections">
+      <h4>Skills</h4>
+      <div class="skill-container">
+        <div class="skill-item">
+          <p class="skills-text">HTML</p>
+          <img
+            class="skill-img"
+            src="./Resources/images/html.png"
+            alt="HTML logo"
+          />
+        </div>
+        <div class="skill-item">
+          <p class="skills-text">CSS</p>
+          <img
+            class="skill-img"
+            src="./Resources/images/css.png"
+            alt="CSS logo"
+          />
+        </div>
+        <div class="skill-item">
+          <p class="skills-text">JavaScipt</p>
+          <img
+            class="skill-img"
+            src="./Resources/images/js.png"
+            alt="Javascript logo"
+          />
+        </div>
+        <div class="skill-item">
+          <p class="skills-text">Microsoft Word</p>
+          <img
+            class="skill-img"
+            src="./Resources/images/word.png"
+            alt="Microsoft Word logo"
+          />
+        </div>
+        <div class="skill-item">
+          <p class="skills-text">Microsoft Excel</p>
+          <img
+            class="skill-img"
+            src="./Resources/images/excel.png"
+            alt="Microsoft Excel logo"
+          />
+        </div>
+        <div class="skill-item">
+          <p class="skills-text">Microsoft Sharepoint</p>
+          <img
+            class="skill-img"
+            src="./Resources/images/sharepoing.png"
+            alt="Microsoft Sharepoint logo"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="About-Me">
+      <h4>About Me</h4>
+      <div class="about-me-container">
+        <div class="me-text-container">
+          <p class="me-paragraph" id="me-para-one">
+            In October of 2022, I was looking for a new skill to help me in
+            finding a new career that I was passionate about. As I was searching
+            through catalogs of online courses I could take in my free time, I
+            came across sites that taught coding. The more I looked into it, the
+            more I was convinced that I could learn this skill which seemed to
+            be more relevant now more than ever. And so began my journey to
+            learn coding and become a Web Developer.
+            <br />
+          </p>
+          <button class="me-paragraph-button" id="read-more-button">
+            Read More
+          </button>
+          <br />
+          <p class="me-paragraph" id="me-para-two">
+            I graduated from the University of California Berkeley in 2005 with
+            a degree in Psychology. Out of college, I decided to take a job
+            working for an airline, which fulfilled my desire to travel and see
+            the world. I only meant to stay in the job for about two to three
+            years, but I enjoyed the job so much I stayed for more than a
+            decade. It wasn't only the travel perks, but the people I worked
+            with and the everyday challenges that strengthened my skills. I
+            learned to work as part of a team, I learned to become resourceful
+            in solving problems, and I learned that even though I was quiet and
+            reserved, I could be a strong leader.
+            <br />
+            <br />
+            Currently I am working as a Service Aide for the City and County of
+            San Francisco. I enjoy the work and the benefits, but I am always
+            looking for ways to improve myself and learn skills that will
+            advance my career.
+          </p>
+          <a class="resume-button" href="./Resources/documents/Resume.docx"
+            >Want to download my Resume?</a
+          >
+        </div>
+        <div id="img-container">
+          <img
+            id="cartoon-img"
+            src="./Resources/images/IMG_2885.jpg"
+            alt="Amy Interiano Avatar"
+            width="300px"
+          />
+          <img
+            id="real-img"
+            src="./Resources/images/IMG_2870.PNG"
+            alt="Amy Interiano"
+            width="300px"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="Contact">
+      <h4>Contact Me</h4>
+      <p>
+        You can reach me at amyinteriano30@gmail.com or you can send me a
+        messagge below!
+      </p>
+      <form>
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" required />
+        <br />
+        <label for="email">Email: </label>
+        <input type="email" id="email" name="email" required />
+        <br />
+        <label for="subject">Subject Line: </label>
+        <input type="text" id="subject" name="subject" />
+        <br />
+        <label for="message">Message: </label>
+        <textarea
+          type="text"
+          id="message"
+          name="message"
+          row="20"
+          columns="100"
+        ></textarea>
+        <br />
+        <input type="submit" class="button" id="contact-submit-button" />
+      </form>
+      <script src="./Resources/javascript/javascript.js"></script>
+    </section>
   </body>
 </html>
